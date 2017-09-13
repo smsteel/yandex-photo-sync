@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Яндекс.Фотки</title>
+    <style>
+      .progress {
+        width: 100%;
+        height: 32px;
+        background-size: 100%;
+        margin-top: 4px;
+        border: 1px solid #1565C0;
+        border-radius: 2px;
+      }
+
+      .progress .bar {
+        content: '';
+        background: #1976D2;
+        width: 100%;
+        display: block;
+        height: 32px;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 6px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" id="token">Синхронизировать</button>
+    <div id="progress-albums" class="progress"><div class="bar"></div></div>
+    <div id="progress-photos" class="progress"><div class="bar"></div></div>
+  </body>
+
+  <script>require('./renderer.js')</script>
+</html>

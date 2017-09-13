@@ -1,0 +1,24 @@
+{
+  "name": "yandex-photo-downloader",
+  "version": "1.0.2",
+  "description": "Download everything from Yandex photos for a logged user via API",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "Yandex",
+    "Yandex photo"
+  ],
+  "author": "Aleksey",
+  "dependencies": {
+    "query-string": "~5.0.0",
+    "electron-fetch": "~1.0.0",
+    "load-json-file": "~3.0.0"
+  },
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
