@@ -41,7 +41,6 @@ function createMainWindow () {
         protocol: 'file:',
         slashes: true
     }));
-    mainWindow.toggleDevTools();
     loadConfig();
 }
 

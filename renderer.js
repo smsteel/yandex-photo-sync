@@ -8,10 +8,6 @@ electron.ipcRenderer.on('done', () => {
     tokenButton.disabled = false;
 });
 
-electron.ipcRenderer.on('info', (_, info) => {
-    console.log(info);
-});
-
 electron.ipcRenderer.on('progress', (_, currentAlbum, totalAlbums, currentPhoto, totalPhotos) => {
     showProgress(albumProgressBar, currentAlbum, totalAlbums);
     showProgress(photosProgressBar, currentPhoto, totalPhotos);
